@@ -1,6 +1,6 @@
 from django.urls import path
 
-from admin.controllers.student_notification_controller import *
+from malik.controllers.student_notification_controller import *
 
 urlpatterns = [
 
@@ -13,7 +13,7 @@ urlpatterns = [
     path('student/remove/subscription', remove_student_subscription,
     name="remove_student_subscription"),
 
-    path('student/veirfy', verify_student,
+    path('student/verify', verify_student,
     name="verify_student")
     
 ]
